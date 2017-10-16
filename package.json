@@ -1,0 +1,24 @@
+{
+  "id": "todoist",
+  "name": "Todoist",
+  "version": "1.0.0",
+  "description": "todoist plugin for Franz 5",
+  "main": "index.js",
+  "author": "Alex Ward <alex@alexward.me.uk>, Mike Burke <mburke@dmwtechnology.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://todoist.com/Users/showLogin",
+    "serviceName": "Todoist",
+    "message": "",
+    "popup": [],
+    "hasNotificationSound": false,
+    "hasIndirectMessages": true,
+    "hasTeamID": false,
+    "customURL": false,
+    "hostedOnly": false,
+    "webviewOptions": {
+      "disablewebsecurity": ""
+    },
+    "openDevTools": false
+  }
+}
