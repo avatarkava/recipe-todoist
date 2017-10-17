@@ -8,17 +8,6 @@
   "license": "MIT",
   "config": {
     "serviceURL": "https://todoist.com/Users/showLogin",
-    "serviceName": "Todoist",
-    "message": "",
-    "popup": [],
-    "hasNotificationSound": false,
-    "hasIndirectMessages": true,
-    "hasTeamID": false,
-    "customURL": false,
-    "hostedOnly": false,
-    "webviewOptions": {
-      "disablewebsecurity": ""
-    },
-    "openDevTools": false
+    "hasIndirectMessages": true
   }
 }
