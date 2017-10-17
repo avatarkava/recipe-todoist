@@ -4,8 +4,8 @@ module.exports = (Franz, options) => {
     let todayCount = 0;
     let inboxCount = 0; 
     
-    const todayElement = document.querySelector('#top_filters .counter.overdue_color');   
-    const inboxElement = document.querySelector('#filter_inbox .counter'); 	 
+    const todayElement = document.querySelector("#top_filters .counter.overdue_color");   
+    const inboxElement = document.querySelector("#filter_inbox .counter"); 	 
 
     if (todayElement) {
       todayCount = parseInt(todayElement.innerHTML, 10);
@@ -19,4 +19,4 @@ module.exports = (Franz, options) => {
   }
 
   Franz.loop(getTasks);    
-;
+};
