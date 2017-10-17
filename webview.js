@@ -1,17 +1,22 @@
 module.exports = (Franz, options) => {
   function getTasks() {
     
-    let todayCount = document.querySelector('#top_filters .counter.overdue_color').innerHTML;   
-    let inboxCount = document.querySelector('#filter_inbox .counter').innerHTML; 	 
+    let todayCount = 0;
+    let inboxCount = 0; 
+    
+    const todayElement = document.querySelector('#top_filters2 .counter.overdue_color');   
+    const inboxElement = document.querySelector('#filter_inbox2 .counter'); 	 
 
-	let todayOverdue = parseInt(todayCount) ? todayCount : 0;
-    let inbox = parseInt(inboxCount) > 0 ? inboxCount : 0
+    if (todayElement) {
+      todayCount = parseInt(todayElement.innerHTML, 10);
+    }
 
-    if (todayOverdue > 0 || inbox > 0) {
-      Franz.setBadge(todayOverdue, inbox);
-	}
+    if (inboxElement) {
+      inboxCount = parseInt(inboxElement.innerHTML, 10);
+    }
+
+    Franz.setBadge(todayCount, inboxCount);    
   }
 
-  Franz.loop(getTasks);
-    
+  Franz.loop(getTasks);    
 };
