@@ -15,7 +15,7 @@ module.exports = (Franz, options) => {
       inboxCount = parseInt(inboxElement.innerHTML, 10);
     }
 
-    Franz.setBadge(todayCount, inboxCount);    
+    Franz.setBadge(inboxCount, todayCount);    
   }
 
   Franz.loop(getTasks);    
