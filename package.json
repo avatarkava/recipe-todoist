@@ -1,13 +1,13 @@
 {
   "id": "todoist",
   "name": "Todoist",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "todoist plugin for Franz 5",
   "main": "index.js",
   "author": "Alex Ward <alex@alexward.me.uk>, Mike Burke <mburke@dmwtechnology.com>",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://todoist.com/Users/showLogin",
+    "serviceURL": "https://todoist.com",
     "hasIndirectMessages": true
   }
 }
